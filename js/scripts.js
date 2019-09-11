@@ -12,7 +12,7 @@ var cast = {
 "shortCode": "tyrion",
 "actor": "Peter Dinklage",
 "house": "Lannister",
-"location": "Kings landing"
+"location": "Kings Landing"
 },
 {
 "name": "Brienne of Tarth",
@@ -26,14 +26,14 @@ var cast = {
 "shortCode": "ned-stark",
 "actor": "Sean Bean",
 "house": "Stark",
-"location": "Winterfell"
+"location": " Crypt of Winterfell"
 },
 {
 "name": "Sandor Clegane",
 "shortCode": "the-hound",
 "actor": "Rory McCann",
 "house": "Clegane",
-"location": "Unknown"
+"location": "Looking for chickens.."
 }
 ]
 }

@@ -12,19 +12,19 @@
   </head>
   <body>
     <h1>Game of Thrones</h1>
-    <ul class="character-list-container"></ul>
-
-    <script id="character-template" type="text/x-handlebars-template">
-      {{#each characters}}
-      <ul class="character">
-      	<img src="images/{{shortCode}}.jpeg">
-      	<h2>{{name}}</h2>
-      	<p>Actor: {{actor}}</p>
-      	<p>House: {{house}}</p>
-        <p>Whereabouts: {{location}}</p>
-      </ul>
-      {{/each}}
-    </script>
+    <ul class="character-list-container">
+      <script id="character-template" type="text/x-handlebars-template">
+        {{#each characters}}
+        <li class="character">
+        	<img src="images/{{shortCode}}.jpeg">
+        	<h2>{{name}}</h2>
+        	<p><strong>Actor: </strong>{{actor}}</p>
+        	<p><strong>House:</strong> {{house}}</p>
+          <p><strong>Whereabouts:</strong> {{location}}</p>
+        </li>
+        {{/each}}
+      </script>
+    </ul>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
