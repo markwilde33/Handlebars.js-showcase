@@ -21,7 +21,9 @@
         	<p><strong>Actor: </strong>{{actor}}</p>
         	<p><strong>House:</strong> {{house}}</p>
           <p><strong>Whereabouts:</strong> {{location}}</p>
-          <p><strong>Favorite Color: </strong>{{#if favorite-color}}{{favorite-color}}{{else}} Secret{{/if}}</p>
+          <!-- <p><strong>Favorite Color: </strong>{{#if favorite-color}}{{favorite-color}}{{else}} Secret{{/if}}</p> -->
+          {{#if favorite-color}}<p><strong>Favorite Color: </strong>{{favorite-color}}</p>{{/if}}
+          {{#unless favorite-color}}<p><strong>Favorite Color: </strong> It's a secret...</p>{{/unless}}
         </li>
         {{/each}}
       </script>
