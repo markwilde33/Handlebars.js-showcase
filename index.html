@@ -15,14 +15,15 @@
     <ul class="character-list-container"></ul>
 
     <script id="character-template" type="text/x-handlebars-template">
-      <li class="character">
+      {{#each characters}}
+      <ul class="character">
       	<img src="images/{{shortCode}}.jpeg">
       	<h2>{{name}}</h2>
       	<p>Actor: {{actor}}</p>
       	<p>House: {{house}}</p>
         <p>Whereabouts: {{location}}</p>
-
-      </li>
+      </ul>
+      {{/each}}
     </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
